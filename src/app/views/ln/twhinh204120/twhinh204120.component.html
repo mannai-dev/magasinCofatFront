@@ -1,0 +1,30 @@
+<div class="card my-5">
+    <div class="card-body">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">tOorg</th>
+                    <th scope="col">tOrno</th>
+                    <th scope="col">tOset</th>
+                    <th scope="col"> go to </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of list">
+                    <td></td>
+                    <td>{{i.toorg}}</td>
+                    <td>{{i.torno}}</td>
+                    <td>{{i.toset}}</td>
+                    <td><button class="button" (click)="openItemDetails(i)">Go to Twhinh204120</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div class="flex-end">
+
+        <button class=" randomAdd " (click)="randomAdd() "> Auto-add </button>
+        <button class="add " (click)=" add() "> Add </button>
+    </div>
+</div>

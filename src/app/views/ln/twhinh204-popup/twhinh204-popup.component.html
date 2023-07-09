@@ -1,0 +1,20 @@
+
+<form [formGroup]="addForm" (ngSubmit)="onSubmit()" class="form-twhinh">
+    <!-- tOorg input field -->
+    <mat-form-field>
+      <input matInput formControlName="tOorg" placeholder="TOorg" required>
+    </mat-form-field>
+  
+    <!-- tOrno input field -->
+    <mat-form-field>
+      <input matInput formControlName="tOrno" placeholder="TOrno" required>
+    </mat-form-field>
+  
+    <!-- tOset input field -->
+    <mat-form-field>
+      <input matInput formControlName="tOset" placeholder="TOset" required>
+    </mat-form-field>
+  
+    <!-- Submit button -->
+    <button type="submit" [disabled]="!addForm.valid">Submit</button>
+  </form>

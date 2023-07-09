@@ -1,0 +1,23 @@
+<div class="card my-5">
+    <div class="card-body">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Created by</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of list">
+                    <td></td>
+                    <td>{{ i.userName}}</td>
+                    <td>{{ i.email}}</td>
+                    <td>{{ i.createdBy}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

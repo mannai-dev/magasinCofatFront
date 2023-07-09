@@ -1,0 +1,25 @@
+<div class="card my-5">
+    <div class="card-body">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">internalCode</th>
+                    <th scope="col">code</th>
+                    <th scope="col">name</th>
+                    <th scope="col"> go to </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of list">
+                    <td></td>
+                    <td>{{ i.internalCode}}</td>
+                    <td>{{ i.code}}</td>
+                    <td>{{ i.name}}</td>
+                    <td><button class="button" (click)="getProduct(i.id)">Go to product</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

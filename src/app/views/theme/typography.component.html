@@ -1,0 +1,23 @@
+<div class="card my-5">
+    <div class="card-body">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Contact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let account of list">
+                    <td></td>
+                    <td>{{ account.userName}}</td>
+                    <td><a href="mailto:{{ account.email }}">{{ account.email }}</a></td>
+                    <td>{{ account.contactId}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

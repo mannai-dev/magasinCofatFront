@@ -1,0 +1,28 @@
+.flex-end {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.testi {
+    background: red;
+}
+
+.button {
+    background-color: #594eee;
+    color: white;
+    border: none;
+}
+
+.randomAdd {
+    background-color: #4dfca4;
+    color: #7a7a7a;
+    border: none;
+}
+
+.add {
+    background-color: #60e3e7;
+    color: #424242;
+    border: none;
+}

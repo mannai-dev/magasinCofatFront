@@ -1,0 +1,124 @@
+<form [formGroup]="addForm" (ngSubmit)="onSubmit()" class="form-twhinh">
+
+
+    <div class="form-field">
+        <label>TOorg : </label>
+        <mat-form-field>
+            <input matInput formControlName="tOorg" placeholder="TOorg" required>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <label>TOrno : </label>
+        <mat-form-field>
+            <input matInput formControlName="tOrno" placeholder="TOrno" required>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <label>TOset : </label>
+        <mat-form-field>
+            <input matInput formControlName="tOset" placeholder="TOset" required>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <label>TSeri : </label>
+        <mat-form-field>
+            <input matInput formControlName="tSeri" placeholder="TSeri" required>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <label>TIttp : </label>
+        <mat-form-field>
+            <input matInput formControlName="tIttp" placeholder="TIttp" required>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <label>TOdat : </label>
+        <mat-form-field>
+            <input matInput formControlName="tOdat" placeholder="TOdat" required>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <label>TSfty : </label>
+        <mat-form-field>
+            <input matInput formControlName="tSfty" placeholder="TSfty" required>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <label>TSfco : </label>
+        <mat-form-field>
+            <input matInput formControlName="tSfco" placeholder="TSfco" required>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <label>TStty : </label>
+        <mat-form-field>
+            <input matInput formControlName="tStty" placeholder="TStty" required>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <label>TStco : </label>
+        <mat-form-field>
+            <input matInput formControlName="tStco" placeholder="TStco" required>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <label>TSfcp : </label>
+        <mat-form-field>
+            <input matInput formControlName="tSfcp" placeholder="TSfcp" required>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <label>TStcp : </label>
+        <mat-form-field>
+            <input matInput formControlName="tStcp" placeholder="TStcp" required>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <label>TSfad : </label>
+        <mat-form-field>
+            <input matInput formControlName="tSfad" placeholder="TSfad" required>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <label>TIhst : </label>
+        <mat-form-field>
+            <input matInput formControlName="tIhst" placeholder="TIhst" required>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <label>TIhco : </label>
+        <mat-form-field>
+            <input matInput formControlName="tIhco" placeholder="TIhco" required>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <label>TIhun : </label>
+        <mat-form-field>
+            <input matInput formControlName="tIhun" placeholder="TIhun" required>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <label>THsta : </label>
+        <mat-form-field>
+            <input matInput formControlName="tHsta" placeholder="THsta" required>
+        </mat-form-field>
+    </div>
+
+    <button type="submit" [disabled]="!addForm.valid">Submit</button>
+</form>

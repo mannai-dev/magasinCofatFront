@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.testi {
+    position: fixed;
+    right: 0;
+    margin-right: 15px;
+    margin-top: -10px;
+    background: #9c2828;
+    color: white;
+    border: none;
+}
+
+
+/*
+.logout {
+    display: flex;
+    align-items: center;
+}
+
+.logout-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+*/
+
+// .exit-icon {
+//     /* Add the necessary CSS styles for the exit icon */
+// }
+// .button-container {
+//     display: flex;
+//     justify-content: center;
+// }
+// button {
+//     background-color: red;
+//     color: white;
+// }

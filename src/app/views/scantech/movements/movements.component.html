@@ -1,0 +1,25 @@
+<div class="card my-5">
+    <div class="card-body">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">palletBarcode</th>
+                    <th scope="col">initialQuantity</th>
+                    <th scope="col">finalQuantity</th>
+                    <th scope="col"> go to </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of list">
+                    <td></td>
+                    <td>{{ i.palletBarcode}}</td>
+                    <td>{{ i.initialQuantity}}</td>
+                    <td>{{ i.finalQuantity}}</td>
+                    <td><button class="button" (click)="getMovement(i.id)">Go to movement</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
