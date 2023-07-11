@@ -32,7 +32,7 @@ pipeline {
 */
         stage("Building Docker image") {
             steps {
-                sh 'docker build -t mannai3/pfe:angular .'
+                 sh 'docker build -t mannai3/pfe:angular -f Dockerfile-frontend .'
             }
         }
 
