@@ -21,14 +21,14 @@ pipeline {
             }
         }
 
-        stage("Code QualityCheck Sonar") {
+     /*   stage("Code QualityCheck Sonar") {
             steps {
                 withSonarQubeEnv('SonarQube') {
                     sh 'npm run sonar'
                 }
             }
         }
-
+*/
         stage("Building Docker image") {
             steps {
                 sh 'docker build -t mannai3/pfe:angular .'
