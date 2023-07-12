@@ -8,6 +8,8 @@ services:
       - 8087:8087
     volumes:
       - ./application.properties:/app/config/application.properties
+    environment:
+      COMPOSE_HTTP_TIMEOUT: 120
 
   frontend:
     build:
@@ -19,3 +21,4 @@ services:
       - ./dist:/usr/share/nginx/html
       - ./magasin-nginx-custom.conf:/etc/nginx/conf.d/default.conf
     restart: always
+
