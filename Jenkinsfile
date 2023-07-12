@@ -33,7 +33,7 @@ pipeline {
      stage("Code QualityCheck Sonar") {
     steps {
       //  sh 'npm run sonar -Dsonar.projectKey=angular -Dsonar.host.url=http://localhost:9000 -Dsonar.login=c69bc11587eb3c42a96ef8464377a1dfdb7ee733'
-        sh 'sudo npm install -g sonar-scanner' 
+        sh 'sudo npm install -g sonar-scanner -S admin' 
         sh 'npm run sonar'
           }
         }
