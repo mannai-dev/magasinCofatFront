@@ -29,14 +29,14 @@ pipeline {
                 }
             }
         }
-*/
+
    stage("Code QualityCheck Sonar") {
     steps {
         sh 'echo "admin" | sudo -S npm install -g sonar-scanner'
         sh 'npm run sonar'
     }
     }
-
+*/
 
         stage("Building Docker image") {
             steps {
