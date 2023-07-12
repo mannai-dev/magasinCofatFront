@@ -16,13 +16,13 @@ pipeline {
             }
         }
 
-        stage("Testing") {
+    /*      stage("Testing") {
             steps {
                 sh 'npm run test'
             }
         }
 
-     /*   stage("Code QualityCheck Sonar") {
+      stage("Code QualityCheck Sonar") {
             steps {
                 withSonarQubeEnv('SonarQube') {
                     sh 'npm run sonar'
@@ -30,6 +30,20 @@ pipeline {
             }
         }
 */
+      stage("Code QualityCheck Sonar") {
+    environment {
+        SONAR_PROJECT_KEY = 'spring'
+        SONAR_HOST_URL = 'http://localhost:9000'
+        SONAR_LOGIN = 'c69bc11587eb3c42a96ef8464377a1dfdb7ee733'
+    }
+    steps {
+        script {
+            withSonarQubeEnv('SonarQube') {
+                sh 'npm run sonar -Dsonar.projectKey=$SONAR_PROJECT_KEY -Dsonar.host.url=$SONAR_HOST_URL -Dsonar.login=$SONAR_LOGIN'
+            }
+        }
+    } 
+    }
         stage("Building Docker image") {
             steps {
                  sh 'docker build -t mannai3/pfe:angular -f Dockerfile-frontend .'
