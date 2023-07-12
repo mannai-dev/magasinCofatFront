@@ -10,7 +10,7 @@ pipeline {
 
         stage("Building Angular app") {
             steps {
-               sh 'npm install'
+               sh 'sudo npm install'
                 sh 'npm run build --project coreui-free-angular-admin-template'
 
             }
