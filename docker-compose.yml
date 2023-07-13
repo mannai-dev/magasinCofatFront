@@ -1,9 +1,10 @@
 version: '3'
 services:
   backend:
-    build:
-      context: /var/lib/jenkins/workspace/Backend/
-      dockerfile: Dockerfile-backend
+    # build:
+    #   context: /var/lib/jenkins/workspace/Backend/
+    #   dockerfile: Dockerfile-backend
+    image: mannai3/pfe:spring
     ports:
       - 8087:8087
     volumes:
@@ -12,9 +13,10 @@ services:
       COMPOSE_HTTP_TIMEOUT: 120
 
   frontend:
-    build:
-      context: /var/lib/jenkins/workspace/Frontend-Angular/
-      dockerfile: Dockerfile-frontend
+    # build:
+    #   context: /var/lib/jenkins/workspace/Frontend-Angular/
+    #   dockerfile: Dockerfile-frontend
+    image: mannai3/pfe:angular
     ports:
       - 4200:80
     volumes:
